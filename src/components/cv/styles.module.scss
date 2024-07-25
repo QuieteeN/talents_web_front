@@ -1,0 +1,158 @@
+$kfu-color: rgba(20, 3, 117, 0.85);
+$kfu-color-light: rgba(26, 1, 171, 0.85);
+$black: #1d1d1d;
+$black-ligher: #1d1d1d55;
+$font-color: #2a3137;
+$kfu-color-ligher: rgba(20, 3, 117, 0.75);
+$btn-color: #5D4ACA;
+
+.cvs__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+
+    .cv__container {
+        border: 1px solid #CCD5DF;
+        padding: 30px 25px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px #ccd5df;
+        transition: all 0.3s ease-in-out;
+
+        .cv__header {
+            font-size: 1.125rem;
+            color: $kfu-color;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            font-weight: 700;
+            margin-bottom: 8px;
+
+            &:hover {
+                color: $kfu-color-light;
+            }
+        }
+
+        .cv__old,
+        .cv__salary {
+            font-size: 0.875rem;
+            line-height: 1.43;
+        }
+
+        .cv__salary {
+            padding: 2px 0 0;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cv__status {
+            background-color: #F0FBF3;
+            border-radius: 4px;
+            padding: 4px 10px 4px 18px;
+            width: fit-content;
+            color: #2A3137;
+            position: relative;
+            margin-bottom: 8px;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #86F582;
+                position: absolute;
+                left: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .cv__add__info {
+            padding: 10px 0;
+            display: flex;
+            border-bottom: 1px solid #EEF1F7;
+
+            .label {
+                display: inline-block;
+                flex-shrink: 0;
+                flex-grow: 0;
+                width: 224px;
+                margin-bottom: 0;
+                margin-right: 16px;
+            }
+
+            .info {
+                padding: 0 0 0 16px;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 4px;
+                    background-color: #2A3137;
+                    border-radius: 50%;
+                    height: 4px;
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .cv__footer {
+            margin-top: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .invite {
+                background-color: #5D4ACA;
+                border: 1px solid #5D4ACA;
+                color: #fff;
+                border-radius: 4px;
+                padding: 0 20px;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #fff;
+                    border: 1px solid #5D4ACA;
+                    color: #5D4ACA;
+                    border-radius: 4px;
+                }
+            }
+
+            .cv__icon {
+                width: 40px;
+                height: 40px;
+                display: inline-flex;
+                align-items: center;
+                padding: 0 12px;
+                line-height: 38px;
+                border: 1px solid #CCD5DF;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: $btn-color;
+
+                    svg {
+                        fill: #fff;
+                    }
+                }
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: $btn-color;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+}

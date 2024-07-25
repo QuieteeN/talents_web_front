@@ -1,0 +1,136 @@
+$kfu-color: rgba(20, 3, 117, 0.85);
+$kfu-color-light: rgba(26, 1, 171, 0.85);
+$black: #1d1d1d;
+$black-ligher: #1d1d1d55;
+$font-color: #2a3137;
+$kfu-color-ligher: rgba(20, 3, 117, 0.75);
+$btn-color: #5D4ACA;
+
+.cards__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .card {
+        border: 1px solid #88888855;
+        padding: 20px 20px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 12px #88888855;
+        color: $font-color;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        .card__title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: $kfu-color;
+            margin-bottom: 4px;
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover {
+            border-color: $kfu-color-ligher;
+
+            .card__title {
+                color: $kfu-color-light
+            }
+        }
+
+
+        .card__salary {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: $font-color;
+            margin-bottom: 12px;
+        }
+
+        .card__company,
+        .card__city,
+        .card__experience,
+        .card__btn {
+            line-height: 1.43;
+            font-size: 0.875rem;
+        }
+
+        .card__city {
+            margin-bottom: 12px;
+        }
+
+        .card__experience {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 12px;
+
+            .experience__icon {
+                width: 1rem;
+                height: 1rem;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .controls_container {
+            display: flex;
+            justify-content: space-between;
+
+            .btn {
+                width: 30px;
+                height: 30px;
+                border: 1px solid rgba(26, 1, 171, 0.85);
+                border-radius: 4px;
+                background-color: #fff;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                z-index: 1;
+
+                span {
+                    width: 15px;
+                    height: 15px;
+                    fill: rgba(26, 1, 171, 0.85);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all .3s ease-in-out;
+                }
+
+                &:hover {
+                    background-color: #5D4ACA;
+                    border-color: #5D4ACA;
+
+                    span {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            .card__btn {
+                background-color: $btn-color;
+                border: 1px solid $btn-color;
+                width: fit-content;
+                color: #fff;
+                border-radius: 8px;
+                line-height: 30px;
+                padding: 0 12px;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: #fff;
+                    color: $btn-color;
+                    border-color: $btn-color;
+                }
+            }
+        }
+    }
+}

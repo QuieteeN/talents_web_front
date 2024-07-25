@@ -1,0 +1,132 @@
+import { ICompany } from "../types/dbTypes";
+
+export const Companies: ICompany[] = [
+    {
+        id: 1,
+        name: "Company 1",
+        about: "About Company 1",
+        city: "City 1",
+        site: "Site 1",
+    },
+    {
+        id: 2,
+        name: "Company 2",
+        about: "About Company 2",
+        city: "City 2",
+        site: "Site 2",
+    },
+    {
+        id: 3,
+        name: "Company 3",
+        about: "About Company 3",
+        city: "City 3",
+        site: "Site 3",
+    },
+    {
+        id: 4,
+        name: "Company 4",
+        about: "About Company 4",
+        city: "City 4",
+        site: "Site 4",
+    },
+    {
+        id: 5,
+        name: "Company 5",
+        about: "About Company 5",
+        city: "City 5",
+        site: "Site 5",
+    },
+    {
+        id: 6,
+        name: "Company 6",
+        about: "About Company 6",
+        city: "City 6",
+        site: "Site 6",
+    },
+    {
+        id: 7,
+        name: "Company 7",
+        about: "About Company 7",
+        city: "City 7",
+        site: "Site 7",
+    },
+    {
+        id: 8,
+        name: "Company 8",
+        about: "About Company 8",
+        city: "City 8",
+        site: "Site 8",
+    },
+    {
+        id: 9,
+        name: "Company 9",
+        about: "About Company 9",
+        city: "City 9",
+        site: "Site 9",
+    },
+    {
+        id: 10,
+        name: "Company 10",
+        about: "About Company 10",
+    },
+    {
+        id: 11,
+        name: "Company 11",
+        about: "About Company 11",
+    },
+    {
+        id: 12,
+        name: "Company 12",
+        about: "About Company 12",
+    },
+    {
+        id: 13,
+        name: "Company 13",
+        about: "About Company 13",
+        city: "City 13",
+        site: "Site 13",
+    },
+    {
+        id: 14,
+        name: "Company 14",
+        about: "About Company 14",
+        city: "City 14",
+        site: "Site 14",
+    },
+    {
+        id: 15,
+        name: "Company 15",
+        about: "About Company 15",
+        city: "City 15",
+        site: "Site 15",
+    },
+    {
+        id: 16,
+        name: "Company 16",
+        about: "About Company 16",
+        city: "City 16",
+        site: "Site 16",
+    },
+    {
+        id: 17,
+        name: "Company 17",
+        about: "About Company 17",
+    },
+    {
+        id: 18,
+        name: "Company 18",
+        about: "About Company 18",
+    },
+    {
+        id: 19,
+        name: "Company 19",
+        about: "About Company 19",
+        city: "City 19",
+        site: "Site 19",
+    },
+    {
+        id: 20,
+        name: "Company 20",
+        about: "About Company 20",
+    }
+]

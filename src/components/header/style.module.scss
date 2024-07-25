@@ -1,0 +1,153 @@
+$item-height: 3.5rem;
+$icon-color: rgba(0, 0, 0, 0.7);
+$icon-hovered-color: rgba(0, 0, 0, 0.85);
+
+
+.header_wrapper {
+    position: sticky;
+    top: 16px;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 100;
+    height: 0px;
+    box-sizing: border-box;
+}
+
+.header_flex_wrapper {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(232, 232, 232, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+}
+
+
+.navigation_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.logo_wrapper {
+    margin: 0;
+    padding: 0.2rem 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 3.25rem;
+    width: 3.25rem;
+    fill: rgba(26, 1, 171, 0.85);
+}
+
+.sections_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    align-items: center;
+    width: 100%;
+    height: $item-height;
+}
+
+
+.header_item {
+    height: 100%;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $icon-hovered-color;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 0.975rem;
+    cursor: pointer;
+    position: relative;
+
+    span {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            right: 0;
+            bottom: -1px;
+            background-color: $icon-hovered-color;
+            height: 1px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &:hover {
+
+        span::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.tools_wrapper {
+    display: flex;
+}
+
+.tools_item {
+    margin-left: 20px;
+    height: $item-height;
+    width: $item-height / 2.33;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    border: none;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    fill: $icon-color;
+    stroke: $icon-color;
+
+    &:focus {
+        display: none;
+    }
+
+    .in_elem {
+        position: absolute;
+        transform: translateY(-50%);
+        transition: opacity 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+        width: inherit;
+
+
+        &.main {
+            opacity: 1;
+
+        }
+
+        &.hovered {
+            opacity: 0;
+        }
+    }
+
+    &:hover {
+
+        fill: $icon-hovered-color;
+        stroke: $icon-hovered-color;
+
+        .main {
+            opacity: 0;
+
+        }
+
+        .hovered {
+            opacity: 1;
+            fill: rgba(20, 3, 117, 0.85)
+        }
+    }
+
+}

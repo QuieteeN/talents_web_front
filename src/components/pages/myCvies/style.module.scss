@@ -1,0 +1,59 @@
+.content {
+    width: 80%;
+    margin: 100px auto 0;
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #3B26B6;
+            border-radius: 4px;
+            width: 100%;
+            padding: 40px 0;
+
+            h1 {
+                font-size: 2rem;
+                line-height: 2.375rem;
+                font-weight: 600;
+                letter-spacing: 0.05rem;
+                margin-bottom: 8px;
+                color: #2a3137;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 500;
+                letter-spacing: 0.03rem;
+                line-height: 1.375rem;
+                margin-bottom: 20px;
+                color: #2a3137;
+            }
+
+            button {
+                border: 1px solid #3B26B6;
+                border-radius: 4px;
+                padding: 10px 20px;
+                font-size: 1.375rem;
+                font-weight: 500;
+                letter-spacing: 0.03rem;
+                color: #fff;
+                background-color: #3B26B6;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #3B26B6;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.modal_message {
+    position: fixed;
+    background-color: #fefefe;
+    height: 50px;
+    width: -500px;
+    top: 100px;
+    right: 50px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: -6px 5px 35px -1px rgba(133, 131, 131, 0.75);
+    -webkit-box-shadow: -6px 5px 35px -1px rgba(133, 131, 131, 0.75);
+    -moz-box-shadow: -6px 5px 35px -1px rgba(133, 131, 131, 0.75);
+    overflow: hidden;
+    align-items: center;
+    color: #2a3137;
+    gap: 10px;
+    padding-right: 20px;
+    transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+
+    &.visible {
+        right: 50px; // конечная позиция на экране
+        opacity: 1;
+    }
+
+    &.hidden {
+        right: -500px; // возвращение в начальную позицию за пределами экрана
+        opacity: 0;
+    }
+
+    .left_border {
+        width: 3px;
+        height: 50px;
+
+        &.info {
+            background-color: #F4F6FB;
+        }
+
+        &.error {
+            background-color: red;
+        }
+
+        &.success {
+            background-color: green;
+        }
+
+        &.warning {
+            background-color: orange;
+        }
+    }
+
+    .message {
+        font-size: 0.975rem;
+        letter-spacing: 0.01rem;
+        flex: 1;
+    }
+
+    span {
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: #40454A;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            fill: #2a3137;
+        }
+    }
+}
